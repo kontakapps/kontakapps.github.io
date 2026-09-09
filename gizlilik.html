@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontak – Gizlilik Politikası</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size: 1.8rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; border-bottom: 1px solid #8884; padding-bottom: .25rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { border: 1px solid #8886; padding: 6px 8px; text-align: left; vertical-align: top; }
+  .meta { color: #777; font-size: .9rem; }
+  .en { margin-top: 3rem; border-top: 2px solid #8884; padding-top: 1rem; }
+</style>
+</head>
+<body>
+
+<h1>Kontak – Gizlilik Politikası</h1>
+<p class="meta">Son güncelleme: 9 Eylül 2026 · Uygulama: Kontak – Araç Masraf Takibi (Android paket adı <code>com.kontakapp.app</code>)</p>
+
+<p>Bu politika, Kontak mobil uygulamasını ("Uygulama") kullanırken hangi verilerin işlendiğini, neden işlendiğini ve haklarınızı açıklar. Kontak, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Google Play politikalarına uygun olarak hazırlanmıştır.</p>
+
+<h2>1. Veri sorumlusu</h2>
+<p><strong>Yunus Emre Kılıç</strong><br>
+İletişim: <strong>info@kratosagency.com</strong></p>
+
+<h2>2. Temel ilke: veriler cihazınızda kalır</h2>
+<p>Kontak hesap açmadan tamamen çevrimdışı kullanılabilir. Bu durumda araç bilgileri, yakıt/masraf/bakım/gelir kayıtları, hatırlatıcılar, fiş fotoğrafları ve belge kasası yalnızca cihazınızda saklanır; hiçbir sunucuya gönderilmez. Belge kasası dosyaları cihazda şifreli tutulur.</p>
+
+<h2>3. İşlenen veriler ve amaçları</h2>
+<table>
+<tr><th>Veri</th><th>Ne zaman</th><th>Amaç</th><th>Nerede</th></tr>
+<tr><td>E-posta adresi, kimlik doğrulama bilgisi (Google/Apple ile giriş)</td><td>Yalnızca hesap açarsanız</td><td>Hesabınızı oluşturmak, cihazlar arası senkron, aile/filo paylaşımı</td><td>Supabase (AB, Frankfurt)</td></tr>
+<tr><td>Araç, yakıt, masraf, bakım, gelir, hatırlatıcı kayıtları</td><td>Hesap açıp senkronu kullanırsanız</td><td>Verilerinizi cihazlar arasında eşitlemek ve yedeklemek</td><td>Supabase (şifreli aktarım, satır düzeyi erişim kuralları: yalnızca siz ve paylaştığınız kişiler)</td></tr>
+<tr><td>Fiş fotoğrafları, belge kasası dosyaları</td><td>Hesap açıp senkronu kullanırsanız</td><td>Yedekleme ve paylaşım</td><td>Supabase Storage (özel kova, yalnızca sahibi erişir)</td></tr>
+<tr><td>Fiş fotoğrafındaki metin (OCR)</td><td>"Fişi tara" özelliğini kullanırsanız</td><td>Tutar, tarih, litre gibi alanları otomatik doldurmak</td><td>Yalnızca cihazda (Google ML Kit, cihaz üstü); fotoğraf hiçbir sunucuya gönderilmez</td></tr>
+<tr><td>Mikrofon / konuşma</td><td>"Sesle ekle" özelliğini kullanırsanız</td><td>Söylediğiniz kaydı yazıya çevirmek</td><td>Cihazın konuşma tanıma servisi (Android'de Google); ses kaydı Kontak tarafından saklanmaz</td></tr>
+<tr><td>Banka / cüzdan uygulamalarının harcama bildirimleri</td><td>Yalnızca Ayarlar'dan "bildirimlerden yakala" özelliğini açar ve sistem izni verirseniz</td><td>Bildirimdeki tutar ve işyerini çıkarıp size masraf önerisi sunmak</td><td>Yalnızca cihazda; ham bildirim metni saklanmaz ve hiçbir yere gönderilmez. Ayarlardan istediğiniz an kapatılabilir</td></tr>
+<tr><td>Bildirim izni, tam zamanlı alarm</td><td>Hatırlatıcı kurarsanız</td><td>MTV, muayene, sigorta, bakım hatırlatmalarını zamanında göstermek</td><td>Cihazda</td></tr>
+<tr><td>İl seçimi</td><td>Ayarlar'da il seçerseniz</td><td>Güncel akaryakıt fiyatı önerisi</td><td>Yalnızca il kodu sunucuya gönderilir; konum izni istenmez</td></tr>
+<tr><td>Reklam kimliği (Advertising ID)</td><td>Ücretsiz sürümde</td><td>Google AdMob üzerinden reklam gösterimi ve ölçümü</td><td>Google AdMob</td></tr>
+<tr><td>Satın alma bilgisi (ürün, işlem kimliği)</td><td>Pro satın alırsanız</td><td>Aboneliğinizi doğrulamak ve geri yüklemek</td><td>Google Play Faturalandırma ve RevenueCat; kart bilgileriniz Kontak'a ulaşmaz</td></tr>
+<tr><td>Anonim kullanım olayları (örn. "kayıt eklendi", "rapor oluşturuldu")</td><td>Uygulama kullanımı sırasında</td><td>Ürünü iyileştirmek</td><td>Kimlikle ilişkilendirilmez</td></tr>
+</table>
+
+<h2>4. Toplanmayan veriler</h2>
+<ul>
+<li>Konum verisi toplanmaz; konum izni istenmez.</li>
+<li>Kişi listesi, SMS, arama geçmişi okunmaz.</li>
+<li>Galeri veya dosyalarınıza toplu erişim istenmez; fiş fotoğrafı için sistemin fotoğraf seçicisi kullanılır ve yalnızca seçtiğiniz dosya alınır.</li>
+<li>Bildirim yakalama özelliği açıksa bile bildirimlerin ham metni ne saklanır ne de gönderilir; yalnızca banka/cüzdan bildirimlerinden tutar ve işyeri çıkarılır.</li>
+</ul>
+
+<h2>5. Üçüncü taraf hizmetler</h2>
+<ul>
+<li><strong>Supabase</strong> – hesap, veritabanı ve dosya depolama (yalnızca hesap açarsanız).</li>
+<li><strong>Google Play Faturalandırma</strong> ve <strong>RevenueCat</strong> – Pro abonelik ve satın almaların yönetimi.</li>
+<li><strong>Google AdMob</strong> – ücretsiz sürümde reklamlar. Reklam kişiselleştirmesini cihaz ayarlarından ("Reklam kimliğini sıfırla / kişiselleştirilmiş reklamları devre dışı bırak") kapatabilirsiniz.</li>
+<li><strong>Google ML Kit</strong> – cihaz üstü metin tanıma (OCR). Görseller cihazdan çıkmaz.</li>
+<li><strong>Google / Apple ile giriş</strong> – kimlik doğrulama. Kontak yalnızca e-posta ve ad bilgisini alır.</li>
+<li><strong>Akaryakıt fiyatı kaynağı</strong> – fiyatlar dağıtıcıların halka açık sayfalarından sunucumuzda derlenir; size ait hiçbir veri bu kaynaklara gönderilmez.</li>
+</ul>
+
+<h2>6. Paylaşım özellikleri</h2>
+<p>"Aracımı paylaş" (aile) ve "Filo" özelliklerini kullanırsanız, davet ettiğiniz kişiler yalnızca paylaştığınız araca ait kayıtları görür. Paylaşımı istediğiniz zaman geri alabilirsiniz. Filo yönetimi için ayrı bir kurumsal abonelik (iyzico üzerinden ödeme) sunulur; ödeme bilgileri iyzico tarafından işlenir.</p>
+
+<h2>7. Saklama süresi ve silme</h2>
+<ul>
+<li>Cihazdaki veriler siz silene veya uygulamayı kaldırana kadar saklanır.</li>
+<li>Sunucudaki veriler hesabınız açık olduğu sürece saklanır.</li>
+<li><strong>Ayarlar → Hesap → "Hesabı ve tüm verileri sil"</strong> ile hesabınız, tüm kayıtlarınız ve dosyalarınız sunucudan kalıcı olarak silinir. Bu işlem geri alınamaz.</li>
+<li>Silme talebinizi <strong>info@kratosagency.com</strong> adresine de iletebilirsiniz; 30 gün içinde sonuçlandırılır.</li>
+</ul>
+
+<h2>8. Güvenlik</h2>
+<p>Tüm sunucu iletişimi TLS ile şifrelenir. Sunucudaki verilere satır düzeyi güvenlik kurallarıyla yalnızca sahibi ve açıkça paylaştığı kişiler erişebilir. Belge kasası dosyaları cihazda şifreli saklanır.</p>
+
+<h2>9. Çocuklar</h2>
+<p>Kontak 18 yaş ve üzeri kullanıcılara yöneliktir; çocuklardan bilerek veri toplanmaz.</p>
+
+<h2>10. KVKK kapsamındaki haklarınız</h2>
+<p>KVKK'nın 11. maddesi uyarınca verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltilmesini veya silinmesini isteme, işlemeye itiraz etme ve zarar görmeniz hâlinde tazminat talep etme haklarına sahipsiniz. Başvurularınızı yukarıdaki iletişim adresine iletebilirsiniz.</p>
+
+<h2>11. Değişiklikler</h2>
+<p>Bu politika güncellendiğinde bu sayfada yayımlanır ve önemli değişikliklerde uygulama içinde bildirilir.</p>
+
+<div class="en">
+<h2>Privacy Policy (English summary)</h2>
+<p>Kontak is a vehicle expense tracker. It works fully offline; without an account, all data stays on your device. If you sign in (Google/Apple), your email and your vehicle/expense records, receipt photos and documents are synced to Supabase (EU) with row-level access limited to you and people you explicitly share with. Receipt OCR and voice input run on-device; images and audio are not uploaded. The optional bank-notification capture reads spending notifications only on the device, keeps no raw text and sends nothing anywhere. No location, contacts, SMS or broad media access is requested. The free tier shows Google AdMob ads (advertising ID). Purchases are handled by Google Play Billing and RevenueCat. You can delete your account and all server data from Settings → Account → "Delete account and all data", or by emailing <strong>info@kratosagency.com</strong>. Contact: <strong>Yunus Emre Kılıç</strong>.</p>
+</div>
+
+</body>
+</html>
